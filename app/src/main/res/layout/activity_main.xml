@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF1A1A"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/order"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Checkout"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/order"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="48dp"
+        android:background="#FFB9B9"
+        android:padding="4dp"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="84dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="143dp"
+        android:adjustViewBounds="true"
+        android:padding="4dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-119dp"
+        android:layout_marginLeft="-119dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="Online Ordering"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

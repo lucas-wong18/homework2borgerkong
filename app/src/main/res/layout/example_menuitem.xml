@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    android:layout_marginBottom="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/menuImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/menuName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menuImage"
+            android:text="name"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/menuBlurb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menuName"
+            android:text="blurb"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/menuCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menuBlurb"
+            android:layout_marginTop="8dp"
+            android:text="cost"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
